@@ -51,6 +51,11 @@ function updatePosition() {
         if (!resetting) {
             p2Score += 1;
             document.getElementById("p2s").innerHTML = p2Score;
+            if(p2Score >= 11){
+                alert("CPU wins");
+                p2Score = 0;
+                p1Score = 0;
+            }
             setTimeout(reset, 3000);
             resetting = true;
         }

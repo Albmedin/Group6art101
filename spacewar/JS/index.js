@@ -57,6 +57,12 @@ document.onkeydown = function(e){
             thrust: true,
             alive: true,
         }
+        playerDOM.style.width = "5px";
+        playerDOM.style.borderRadius = "0px";
+        playerDOM.style.width = "5px";
+        playerDOM.style.borderRadius = "0px";
+        clearInterval(updater)
+        updater = setInterval(update,1000/60);
     }
 
 }
