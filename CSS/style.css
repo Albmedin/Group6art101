@@ -55,3 +55,12 @@ body{
     left: 300px;
     position: absolute;
 }
+
+#six{
+    height: 600px;
+    padding-left: 2vw;
+}
+
+#seven{
+    padding-left: 2vw;
+}
