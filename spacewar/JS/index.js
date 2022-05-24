@@ -182,7 +182,7 @@ function rotateCpu(){
             cpu.rotation = -45;
         }
     }
-    if(starDistance > 130){
+    if(starDistance > 150){
         var angle = Math.atan2(radiusX,radiusY)
         cpu.rotation = (angle * 180/Math.PI) + 180;
         console.log("Centered");
