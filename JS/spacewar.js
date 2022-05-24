@@ -131,6 +131,7 @@ function update(){
     checkCollision();
     if(player.alive && !cpu.alive){
         alert("You win. Press R to play again.");
+        document.getElementById("hidden60").hidden = false;
         clearInterval(updater);
     }
     if(!player.alive){
