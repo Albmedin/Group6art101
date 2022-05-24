@@ -1,12 +1,20 @@
 h1 {
-    color: blue;
+    color: black;
     font-size: 200%
+}
+
+h2 {
+    font-family: "times new roman";
+    text-indent: 20px;
+    margin-left: 10px;
+    color: white;
 }
 
 p {
     font-family: "times new roman";
     text-indent: 20px;
     margin-left: 10px;
+    color: white;
 }
 
 html,
@@ -14,7 +22,7 @@ body,
 #background {
   width: 100vw;
   min-height: 100vh;
-  background-color: #f7ffae;
+  background-color: gray;
 }
 
 #content {
