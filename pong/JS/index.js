@@ -11,9 +11,11 @@ var p2Score = 0;
 var ball = {
     x: 200,
     y: 150,
-    xDirection: 6,
-    yDirection: 2
+    xDirection: 0,
+    yDirection: 0
 }
+
+setTimeout(start,3000)
 
 function abs(i) {
     return i < 0 ? i * -1 : i;
@@ -100,8 +102,12 @@ function reset() {
 function start() {
     console.log("Starting");
     resetting = false;
-    ball.xDirection = 6;
-    ball.yDirection = 2;
+    if(p1Score > p2Score){
+        ball.xDirection = -6;
+    }else{
+        ball.xDirection = 6;
+    }
+    ball.yDirection = Math.floor(Math.random() * 5) - 2;
 }
 
 document.onkeydown = function (e) {
