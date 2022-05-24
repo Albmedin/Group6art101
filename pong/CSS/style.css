@@ -39,18 +39,20 @@
 
 #scoreboard{
     position: absolute;
-    margin-top: 350px;
-    margin-left:435px; /*half of the width*/
     font-family:'Courier New', Courier, monospace;
-    height: 50px;
+    top:50%;
+    left:50%;
+    margin-top:-250px; /*half of the height*/
+    margin-left:-200px; /*half of the width*/
+    height: 300px;
     width: 400px;
     border: 5px solid black;
-    border-top: none;
+    border-top: 5px solid black;
 }
 
 #p1s{
     color: red;
-    float: left;
+    /* float: left; */
 }
 
 #p2s{
