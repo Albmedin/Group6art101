@@ -64,3 +64,65 @@ body{
 #seven{
     padding-left: 2vw;
 }
+
+#pong{
+    position:relative;
+    width:400px;
+    height:300px;
+    border: 5px solid black;
+  }
+  
+  #p1{
+      position: absolute;
+      height: 50px;
+      width: 5px;
+      background-color: black;
+      top: 150px;
+      left: 25px;
+  }
+  
+  #p2{
+      position: absolute;
+      height: 50px;
+      width: 5px;
+      background-color: black;
+      top: 150px;
+      right: 25px;
+  }
+  
+  #ball{
+      position: absolute;
+      border-radius: 5vw;
+      width: 20px;
+      height: 20px;
+      top: 150px;
+      left: 200px;
+      background-color: yellowgreen;
+      border: 1px solid black;
+  }
+  
+  #scoreboard{
+      position: relative;
+      font-family:'Courier New', Courier, monospace;
+      height: 50px;
+      width: 400px;
+      border-top: none;
+      border: 5px solid black;
+      white-space: nowrap;
+      display: flex;
+  }
+  
+  #p1s{
+      color: red;
+      /* float: left; */
+  }
+  
+  #p2s{
+      color: blue;
+      padding-left: 200px;
+  }
+  
+  #pongGame{
+    margin-left: 10px;
+    position: absolute;
+  }
