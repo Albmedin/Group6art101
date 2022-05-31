@@ -1,46 +1,22 @@
 h1 {
     color: #3d0e6f;
-    font-size: 200%
-}
-
-h2 {
-    font-family: "Helvetica";
-    text-indent: 50px;
-    margin-left: 10px;
-    color: #3d0e6f;
-    font-size: 200%
+    font-size: 300%;
+    text-align: center;
 }
 
 h3 {
-    font-family: "Helvetica";
-    text-indent: 50px;
-    margin-left: 10px;
+    font-family: "times new roman";
+    text-indent: 20px;
+    margin-left: 30px;
     color: #3d0e6f;
-    font-size: 200%
-}
-
-h4 {
-    font-family: "Helvetica";
-    text-indent: 50px;
-    margin-left: 10px;
-    color: #3d0e6f;
-    font-size: 200%
-}
-
-h5 {
-    font-family: "Helvetica";
-    text-indent: 50px;
-    margin-left: 10px;
-    color: #3d0e6f;
-    font-size: 200%
 }
 
 p {
     font-family: "times new roman";
-    text-indent: 100px;
-    margin-left: 20px;
+    text-indent: 20px;
+    margin-left: 30px;
     color: #3d0e6f;
-    width: 85vw;
+    width: 50vw;
 }
 
 html,
@@ -52,15 +28,11 @@ body,
 }
 
 #content {
-    background-color: #cccccc;
+    background-color: #b288dd;
     width: 1200px;
     min-height: 300px;
-    padding: 15px;
-    margin: 15px;
-    border: solid 3px #444444;
-    font-size: 25px;
-}
-
-#my-portrait {
-    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px #444444;
+    font-size: 20px;
 }
