@@ -1,0 +1,36 @@
+#tetris{
+    width: 450px;
+    height: 600px;
+    position: relative;
+    border: 5px solid teal;
+    
+}
+
+.square{
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    padding: 0%;
+    margin: 0px;
+    position: relative;
+    top: 4px;
+    margin-top: -4px;
+    border: 1px solid black;
+}
+
+#game{
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#info{
+    padding: 5px;
+    border: 5px solid teal;
+    border-left: none;
+    width: 300px;
+}
+
+#link{
+    display: none;
+}
