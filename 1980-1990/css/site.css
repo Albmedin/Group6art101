@@ -1,22 +1,21 @@
 h1 {
-    color: #3d0e6f;
-    font-size: 300%;
-    text-align: center;
+    color: black;
+    font-size: 200%
 }
 
-h3 {
+h2 {
     font-family: "times new roman";
     text-indent: 20px;
-    margin-left: 30px;
-    color: #3d0e6f;
+    margin-left: 10px;
+    color: white;
 }
 
 p {
     font-family: "times new roman";
     text-indent: 20px;
-    margin-left: 30px;
-    color: #3d0e6f;
-    width: 50vw;
+    margin-left: 10px;
+    color: white;
+    width: 80vw;
 }
 
 html,
@@ -24,11 +23,11 @@ body,
 #background {
   width: 100vw;
   min-height: 100vh;
-  background-color: #b288dd;
+  background-color: gray;
 }
 
 #content {
-    background-color: #b288dd;
+    background-color: #cccccc;
     width: 1200px;
     min-height: 300px;
     padding: 10px;
