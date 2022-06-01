@@ -215,7 +215,7 @@ function drawBoard(){
         }
         score += additonalScore;
         document.getElementById("score").innerHTML = score;
-        if(score > 1000){
+        if(score >= 1000){
             document.getElementById("link").style.display = "inline-flex";
         }
     }
@@ -283,10 +283,12 @@ window.onkeydown = function(e){
             x: curPiece.x,
             y: curPiece.y
         }
-        console.log(rotated);
-        if(!colliding(rotated)){
-            curPiece.piece = rotatePiece();
-            drawBoard();
+
+        if(rotated.x + rotated.piece[0].length < 10){
+            if(!colliding(rotated)){
+                curPiece.piece = rotatePiece();
+                drawBoard();
+            }
         }
     }
 }
