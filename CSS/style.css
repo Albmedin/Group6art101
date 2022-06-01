@@ -15,6 +15,14 @@
     font-family: Koulen, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+#link{
+    color: white;
+    background-color: orange;
+    margin-left: 35vw;
+    padding: 3vw orange;
+    font-size: 5vw;
+}
+
 body{
     margin: 0;
 }
