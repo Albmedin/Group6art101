@@ -215,7 +215,7 @@ function drawBoard(){
         }
         score += additonalScore;
         document.getElementById("score").innerHTML = score;
-        if(score >= 1000){
+        if(score >= 500){
             document.getElementById("link").style.display = "inline-flex";
         }
     }
@@ -290,5 +290,23 @@ window.onkeydown = function(e){
                 drawBoard();
             }
         }
+    }
+    if(key == " "){
+        board = [
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0]
+        ]
+        score = 0;
+        curPiece = newPiece();
     }
 }
