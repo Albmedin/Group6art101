@@ -40,6 +40,7 @@ function updatePosition() {
         ball.yDirection = 0;
         if (!resetting) {
             p1Score += 1;
+            document.getElementById("link").style.display = "block";
             document.getElementById("p1s").innerHTML = p1Score;
             setTimeout(reset, 3000);
             resetting = true;
