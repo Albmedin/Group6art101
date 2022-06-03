@@ -1,7 +1,26 @@
 h1 {
-    color: #3d0e6f;
-    font-size: 300%;
-    text-align: center;
+  background: linear-gradient(white, #6d37a5);
+  background-size: cover;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px #3d0e6f;
+  -webkit-background-clip: text;
+  padding: 0;
+  font-size: 500%;
+  text-align: center;
+}
+
+.text {
+    height: 200px;
+    display: inline-block;
+    font-size: 100px;
+    line-height: 84%;
+    font-family: 'Rubik', sans-serif;
+    padding-left: 7px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: white;
+    margin-top: -50px;
 }
 
 h3 {
@@ -9,7 +28,6 @@ h3 {
     text-indent: 20px;
     margin-left: 30px;
     color: #3d0e6f;
-    border-bottom:2px solid #b288dd;
 }
 
 p {
