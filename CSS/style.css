@@ -44,3 +44,13 @@ background-image: linear-gradient(white, #6d37a5);
   font-family: 'Exo';
   margin-left: 25px;
 }
+
+p {
+    font-family: Georgia;
+    text-indent: 20px;
+    margin-left: 130px;
+    font-size: 25px;
+    color: black;
+    width: 80vw;
+    text-align: center;
+}
