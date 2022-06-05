@@ -1,66 +1,64 @@
-h1 {
-    color: black;
-    font-size: 200%
-}
+@import url('https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Monoton|Quantico:700');
 
-h2 {
-    font-family: "Helvetica";
-    text-indent: 20px;
-    margin-left: 10px;
-    color: blue;
-    font-size: 200%
-}
+#title {
+    background: url(https://i.pinimg.com/originals/64/30/98/643098c94a5eeff9604eefcf67604dda.jpg);
+    background-size: cover;
+    color: #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px #3d0e6f;
+    -webkit-background-clip: text;
+    padding: 0;
 
-h3 {
-    font-family: "Helvetica";
-    text-indent: 20px;
-    margin-left: 10px;
-    color: green;
-    font-size: 200%
 }
-
-h4 {
-    font-family: "Helvetica";
-    text-indent: 20px;
-    margin-left: 10px;
-    color: red;
-    font-size: 200%
-}
-
-h5 {
-    font-family: "Helvetica";
-    text-indent: 20px;
-    margin-left: 10px;
-    color: orange;
-    font-size: 200%
-}
-
-p {
-    font-family: "times new roman";
-    text-indent: 20px;
-    margin-left: 10px;
-    color: black;
-    width: 80vw;
+.text {
+    height: 200px;
+    display: inline-block;
+    font-size: 100px;
+    line-height: 84%;
+    font-family: 'Rubik', sans-serif;
+    padding-left: 7px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: white;
+    margin-top: -50px;
 }
 
 html,
 body,
 #background {
-  width: 100vw;
-  min-height: 100vh;
-  background-color: cyan;
+width: 100vw;
+min-height: 100vh;
+background-image: linear-gradient(white, #6d37a5);
 }
 
-#content {
-    background-color: #cccccc;
-    width: 1200px;
-    min-height: 300px;
-    padding: 10px;
-    margin: 10px;
-    border: solid 1px #444444;
-    font-size: 20px;
+h1 {
+  background: linear-gradient(white, #6d37a5);
+  background-size: cover;
+  color: #fff;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 3px #3d0e6f;
+  -webkit-background-clip: text;
+  padding: 0;
+  font-size: 500%;
+  text-align: center;
 }
 
-#my-portrait {
-    width: 300px;
+ h3 {
+  color: black;
+  font-size: 200%;
+  font-family: 'Exo';
+  margin-left: 25px;
+}
+
+#p {
+  font-variant: small-caps;
+	font-family: 'Audiowide';
+  text-indent: 20px;
+  margin-left: 10px;
+  color: black;
+  width: 5vw;
+  line-height: 2 ;
+  font-size: 20px;
 }
