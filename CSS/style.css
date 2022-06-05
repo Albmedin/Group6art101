@@ -20,7 +20,8 @@
 
 html,
 body,
-#background {
+
+#p {
 width: 100vw;
 min-height: 100vh;
 background-image: linear-gradient(white, #6d37a5);
@@ -42,14 +43,4 @@ background-image: linear-gradient(white, #6d37a5);
   font-size: 200%;
   font-family: 'Exo';
   margin-left: 25px;
-}
-
-#p {
-	font-family: 'monospace';
-  text-indent: 20px;
-  margin-left: 2px;
-  color: black;
-  width: 80vw;
-  line-height: 3 ;
-  font-size: 20px;
 }
