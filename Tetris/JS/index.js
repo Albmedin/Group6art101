@@ -215,7 +215,7 @@ function drawBoard(){
         }
         score += additonalScore;
         document.getElementById("score").innerHTML = score;
-        if(score >= 500){
+        if(score >= 50){
             document.getElementById("link").style.display = "inline-flex";
         }
     }
