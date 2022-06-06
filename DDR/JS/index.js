@@ -1,9 +1,12 @@
-var notes = {107: 'l', 134: 'l', 160: 'l', 203: 'l', 229: 'l', 273: 'l', 302: 'l', 332: 'l', 372: 'r', 412: 'u', 463: 'd', 491: 'r', 509: 'u', 530: 'l', 567: 'u', 605: 'u', 645: 'r', 694: 'd', 720: 'l', 737: 'u', 761: 'r', 792: 'd', 836: 'u', 875: 'l', 924: 'd', 949: 'r', 965: 'u', 984: 'l', 997: 'd', 1030: 'd', 1062: 'l', 1090: 'd', 1111: 'r', 1149: 'd', 1153: 'l', 1194: 'd', 1224: 'l', 1253: 'd', 1294: 'l', 1327: 'u', 1350: 'r', 1388: 'l', 1423: 'd', 1452: 'r', 1481: 'l', 1516: 'l', 1542: 'l', 1583: 'l', 1615: 'l', 1654: 'l', 1683: 'l', 1715: 'l', 1756: 'r', 1799: 'u', 1851: 'd', 1876: 'r', 1893: 'u', 1912: 'l', 1945: 'd', 1989: 'r', 2029: 'u', 2081: 'd', 2109: 'r', 2125: 'u', 2158: 'l', 2181: 'd', 2223: 'r', 2262: 'u', 2311: 'l', 2337: 'd', 2352: 'r', 2365: 'u', 2390: 'd', 2411: 'l', 2452: 'r', 2483: 'l', 2509: 'd', 2537: 'r', 2565: 'u', 2583: 'l', 2606: 'd', 2639: 'l', 2677: 'u', 2707: 'r', 2738: 'd', 2766: 'u', 2797: 'l', 2811: 'd', 2827: 'r', 2841: 'u', 2872: 'd'}
+var notes = {114: 'l', 148: 'u', 184: 'l', 230: 'u', 263: 'r', 286: 'd', 315: 'l', 352: 'u', 385: 'r', 429: 'd', 463: 'l', 488: 'u', 516: 'l', 538: 'u', 559: 'r', 582: 'd', 605: 'l', 627: 'u', 643: 'd', 654: 'l', 665: 'u', 688: 'r', 713: 'l', 731: 'u', 744: 'r', 767: 'd', 788: 'l', 810: 'u', 824: 'l', 833: 'd', 856: 'u', 869: 'r', 893: 'l', 924: 'd', 954: 'r', 977: 'd', 996: 'l', 1015: 'u', 1040: 'd', 1063: 'r', 1087: 'u', 1111: 'l', 1144: 'r', 1166: 'd', 1188: 'l', 1211: 'u', 1236: 'd', 1262: 'r', 1289: 'l', 1312: 'u', 1358: 'u', 1385: 'u', 1411: 'u', 1438: 'u', 1463: 'u', 1487: 'u', 1512: 'l', 1534: 'd', 1582: 'l', 1626: 'd', 1660: 'r', 1687: 'u', 1717: 'l', 1756: 'd', 1787: 'r', 1827: 'u', 1863: 'd', 1914: 'l', 1964: 'r', 1985: 'd', 2013: 'l', 2028: 'u', 2037: 'r', 2059: 'd', 2070: 'l', 2089: 'u', 2116: 'd', 2135: 'r', 2157: 'l', 2182: 'u', 2212: 'l', 2228: 'd', 2252: 'u', 2261: 'l', 2290: 'd', 2315: 'r', 2351: 'l', 2374: 'u', 2393: 'd', 2412: 'r', 2436: 'u', 2460: 'l', 2483: 'd', 2509: 'l', 2535: 'd', 2560: 'l', 2583: 'd', 2606: 'u', 2630: 'l',2655: "d",2684:"r"}
 var lefts = []
 var ups = []
 var downs = []
 var rights = []
 var frameCounter = 0;
+var score = 0;
+var combo = 0;
+var started = false;
 
 
 function addLeft(){
@@ -70,43 +73,107 @@ function updateFrame(){
                 break;
         }
     }
-    for(const n of lefts){
-        n.style.top = updateTop(n,-2);
+    var markedForRemoval = [];
+    for(const l of [lefts,rights,ups,downs]){
+        for(const n of l){
+            n.style.top = updateTop(n,-4);
+            if(getTop(n) < 0){
+                markedForRemoval.push(l);
+            }
+        }
     }
-    for(const n of rights){
-        n.style.top = updateTop(n,-2);
+    
+    for(const r of markedForRemoval){
+        console.log("Bruh");
+        r.shift().style.display = "none";
     }
-    for(const n of ups){
-        n.style.top = updateTop(n,-2);
-    }
-    for(const n of downs){
-        n.style.top = updateTop(n,-2);
-    }
+
+
     frameCounter++;
+}
+
+function addScore(d){
+    combo++;
+    if(d<5){
+        document.getElementById("reaction").innerHTML = "Perfect!"
+        document.getElementById("reaction").style.color = "green";
+        score += 3 * combo;
+    }else if(d<20){
+        document.getElementById("reaction").innerHTML = "Good!"
+        document.getElementById("reaction").style.color = "blue";
+        score += 2 * combo;
+    }else{
+        document.getElementById("reaction").innerHTML = "Ok."
+        document.getElementById("reaction").style.color = "yellow";
+        score += combo;
+    }
+    if(score > 1000){
+        document.getElementById("link").style.display = "block"
+    }
+}
+
+function getDisplacement(n){
+    if(n == undefined){
+        return 100;
+    }
+    return Math.abs(getTop(n) - 30);
+}
+
+function whiff(){
+    combo = 0;
+    document.getElementById("reaction").innerHTML = "Oof!"
+    document.getElementById("reaction").style.color = "red";
 }
 
 window.onkeydown = function(e){
     var key = e.key;
     if(key == "ArrowLeft"){
-        if(getTop(lefts[0]) - 50 < 0){
+        var diff = getDisplacement(lefts[0]);
+        if(diff < 50){
             lefts.shift().style.display = "none";
+            addScore(diff);
+        }else{
+            whiff();
         }
     }
     if(key == "ArrowRight"){
-        if(getTop(rights[0]) - 50 < 0){
+        var diff = getDisplacement(rights[0]);
+        if(diff < 50){
             rights.shift().style.display = "none";
+            addScore(diff);
+        }else{
+            whiff();
         }
     }
     if(key == "ArrowUp"){
-        if(getTop(ups[0]) - 50 < 0){
+        var diff = getDisplacement(ups[0])
+        if(diff < 50){
             ups.shift().style.display = "none";
+            addScore(diff);
+        }else{
+            whiff();
         }
     }
     if(key == "ArrowDown"){
-        if(getTop(downs[0]) - 50 < 0){
+        var diff = getDisplacement(downs[0]);
+        if(diff < 50){
             downs.shift().style.display = "none";
+            addScore(diff);
+        }else{
+            whiff();
         }
     }
-    console.log(notes);
+
+    if(key == " "){
+        if(!started){
+            song.play()
+            setInterval(updateFrame, 1000/60);
+            document.getElementById("reaction").innerHTML = "";
+            started = true;
+        }
+    }
+    document.getElementById("score").innerHTML = score;
+    document.getElementById("combo").innerHTML = combo;
+    console.log(score);
 }
-setInterval(updateFrame, 1000/60);
+var song = new Audio("./ddrsong.wav")
