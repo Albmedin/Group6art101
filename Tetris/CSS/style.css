@@ -2,8 +2,9 @@
     width: 450px;
     height: 600px;
     position: relative;
-    border: 5px solid teal;
-    
+    border: 5px solid #6d37a5;
+
+
 }
 
 .square{
@@ -26,11 +27,36 @@
 
 #info{
     padding: 5px;
-    border: 5px solid teal;
+    border: 5px solid #6d37a5;
     border-left: none;
     width: 300px;
+
+
 }
 
 #link{
     display: none;
 }
+
+html,
+body,
+#background {
+width: 100vw;
+min-height: 100vh;
+background-image: linear-gradient(white, #6d37a5);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #3d0e6f;
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+  }
+
+  p {
+    font-variant: small-caps;
+    margin-left: 10px;
+    color: black;
+    font-size: 18px;
+  }
