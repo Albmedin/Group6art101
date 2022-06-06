@@ -55,3 +55,9 @@ p {
     width: 80vw;
     text-align: center;
 }
+
+img{
+  position: relative;
+  margin-left:30vw;
+  width: 40vw;
+}
