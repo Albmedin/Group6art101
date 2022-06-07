@@ -89,9 +89,7 @@ h1 {
 
 }
 
-html,
-body,
-#background {
+html{
 width: 100vw;
 min-height: 100vh;
 background-image: linear-gradient(white, #6d37a5);

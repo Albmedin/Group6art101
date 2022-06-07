@@ -7,7 +7,7 @@
 
 #info{
     border: 5px solid black;
-    width: 180px;
+    width: 500px;
     left: 310px;
     height: 480px;
     position: absolute;
@@ -76,7 +76,13 @@
 }
 
 #link{
+    font-size: large;
+    background-color: green;
+    color: white;
     display: none;
+    width: fit-content;
+    height: fit-content;
+    border: 5px solid green;
 }
 
 .text {
@@ -93,9 +99,7 @@
 
 }
 
-html,
-body,
-#background {
+html{
 width: 100vw;
 min-height: 100vh;
 background-image: linear-gradient(white, #6d37a5);
