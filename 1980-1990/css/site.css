@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Monoton|Quantico:700');
 
 h1 {
-    text-align: center;
+    margin-left: 115px;
     font-size: 70px;
     color: #3d0e6f;
     font-family: 'Rubik', sans-serif;
@@ -37,19 +37,18 @@ background-image: linear-gradient(white, #6d37a5);
   color: black;
   font-size: 200%;
   font-family: 'Exo';
-  margin-left: 25px;
+  margin-left: 115px;
 }
 
 p {
   font-variant: small-caps;
-	font-family: 'Audiowide';
-  text-indent: 20px;
-  margin-left: 10px;
+  font-family: 'Audiowide';
+  margin-left: 125px;
   color: black;
   width: 80vw;
   line-height: 2 ;
-  font-size: 18px;
-}
+  font-size: 20px;
+  }
 
 
 #link{
@@ -79,4 +78,11 @@ p {
 
 #link:hover{
   box-shadow: 3px 3px black;
+}
+
+#pic{
+  width: 350px;
+  float: right;
+  margin-top: -5px;
+  padding: 20px;
 }
