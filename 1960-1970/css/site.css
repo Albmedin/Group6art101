@@ -51,7 +51,10 @@ background-image: linear-gradient(white, #6d37a5);
 }
 
 #pic{
+  width: 350px;
   float: right;
+  margin-top: -5px;
+  padding: 20px;
 }
 
 

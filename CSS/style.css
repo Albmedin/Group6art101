@@ -31,6 +31,7 @@ h1 {
   font-variant: small-caps;
 	font-family: 'Audiowide';
   margin-left: 125px;
+  margin-top: -75px;
   color: black;
   width: 80vw;
   line-height: 2 ;
@@ -40,6 +41,6 @@ h1 {
 #pic{
   width: 400px;
   float: right;
-  margin-top: -50px;
+  margin-top: 45px;
   padding: 20px;
 }
