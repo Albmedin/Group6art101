@@ -107,7 +107,7 @@ function addScore(d){
         document.getElementById("reaction").style.color = "yellow";
         score += combo;
     }
-    if(score > 1000){
+    if(score > 300){
         document.getElementById("link").style.display = "block"
     }
 }
