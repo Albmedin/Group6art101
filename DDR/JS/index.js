@@ -82,7 +82,7 @@ function updateFrame(){
             }
         }
     }
-    
+
     for(const r of markedForRemoval){
         console.log("Bruh");
         r.shift().style.display = "none";
