@@ -65,3 +65,9 @@ p {
 #link:hover{
     box-shadow: 3px 3px black;
 }
+#space2 {
+  image-rendering; pixelated
+}
+#space1 {
+  image-rendering; pixelatedS
+}

@@ -66,3 +66,8 @@ p {
 #link:hover{
     box-shadow: 3px 3px black;
 }
+#fruitimg {
+  width: 20vw;
+  margin-left: 40vw;
+  image-rendering: pixelated;
+}
