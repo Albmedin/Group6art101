@@ -49,8 +49,6 @@ p {
   width: 80vw;
   line-height: 2 ;
   font-size: 18px;
-<<<<<<< HEAD
-=======
 }
 
 
@@ -67,5 +65,4 @@ p {
 
 #link:hover{
     box-shadow: 3px 3px black;
->>>>>>> 1cec40d8f6fd2ca484b4b6d2692cdd967ee066a0
 }
