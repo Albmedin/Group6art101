@@ -101,6 +101,7 @@ window.onkeydown = (e) => {
             frameCounter = 0;
         }
         heliAcceleration = -0.2;
+        return false;
     }
 }
 

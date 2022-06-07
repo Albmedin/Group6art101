@@ -92,6 +92,7 @@ window.onkeydown = function(e){
         if(!dead){
             velocity = -4;
         }
+        return false;
     }
 }
 
