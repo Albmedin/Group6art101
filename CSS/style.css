@@ -58,3 +58,9 @@ background-image: linear-gradient(white, #6d37a5);
   margin-top: -5px;
   padding: 20px;
 }
+
+img{
+  position: relative;
+  margin-left:30vw;
+  width: 40vw;
+}

@@ -10,22 +10,10 @@ h1 {
     padding: 0;
 
 }
-
-#title {
-    background: url(https://invisioncommunity.co.uk/wp-content/uploads/2019/06/video-game-cover-montage.jpg);
-    background-size: cover;
-    color: #fff;
-    margin-left: 115px;
-    -webkit-text-fill-color: #6d37a5;
-    -webkit-text-stroke: 3px #3d0e6f;
-    -webkit-background-clip: text;
-    padding: 0;
-
-}
-.topbar {
+.text {
     height: 200px;
     display: inline-block;
-    font-size: 70px;
+    font-size: 100px;
     line-height: 84%;
     font-family: 'Rubik', sans-serif;
     padding-left: 7px;
@@ -33,6 +21,7 @@ h1 {
     -webkit-background-clip: text;
     color: white;
     margin-top: -50px;
+
 }
 
 html,
@@ -48,26 +37,20 @@ background-image: linear-gradient(white, #6d37a5);
   color: black;
   font-size: 200%;
   font-family: 'Exo';
-  margin-left: 125px;
-  width: 80vw;
+  margin-left: 25px;
 }
 
-#p {
+p {
   font-variant: small-caps;
 	font-family: 'Audiowide';
-  margin-left: 125px;
+  text-indent: 20px;
+  margin-left: 10px;
   color: black;
   width: 80vw;
   line-height: 2 ;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-#pic{
-  width: 350px;
-  float: right;
-  margin-top: -5px;
-  padding: 20px;
-}
 
 #link{
     border: 3vw solid #cccccc;
