@@ -98,11 +98,11 @@ background-image: linear-gradient(white, #6d37a5);
 }
 
 
- h3 {
-  color: black;
+ h2 {
+  color: #6d37a5;
   font-size: 200%;
   font-family: 'Exo';
-  margin-left: 25px;
+  margin-left: 50px;
 }
 
 p {
