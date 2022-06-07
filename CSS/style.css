@@ -2,29 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Monoton|Quantico:700');
 
-#title {
-    background: url(https://invisioncommunity.co.uk/wp-content/uploads/2019/06/video-game-cover-montage.jpg);
-    background-size: cover;
-    color: #fff;
-    margin-left: 115px;
-    -webkit-text-fill-color: #6d37a5;
-    -webkit-text-stroke: 3px #3d0e6f;
-    -webkit-background-clip: text;
-    padding: 0;
-
-}
-.topbar {
-    height: 200px;
-    display: inline-block;
-    font-size: 70px;
-    line-height: 84%;
-    font-family: 'Rubik', sans-serif;
-    padding-left: 7px;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: white;
-    margin-top: -50px;
-}
 
 html,
 body,
@@ -34,6 +11,14 @@ min-height: 100vh;
 background-image: linear-gradient(white, #6d37a5);
 }
 
+h1 {
+    margin-left: 115px;
+    font-size: 70px;
+    color: #3d0e6f;
+    font-family: 'Rubik', sans-serif;
+    padding: 0;
+
+}
 
  h3 {
   color: black;
@@ -46,6 +31,7 @@ background-image: linear-gradient(white, #6d37a5);
   font-variant: small-caps;
 	font-family: 'Audiowide';
   margin-left: 125px;
+  margin-top: -75px;
   color: black;
   width: 80vw;
   line-height: 2 ;
@@ -55,12 +41,6 @@ background-image: linear-gradient(white, #6d37a5);
 #pic{
   width: 400px;
   float: right;
-  margin-top: -50px;
+  margin-top: 45px;
   padding: 20px;
-}
-
-img{
-  position: relative;
-  margin-left:30vw;
-  width: 40vw;
 }
